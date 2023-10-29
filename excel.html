@@ -1,0 +1,45 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <title>Excel</title> 
+        <link rel="stylesheet" href="css/style.css">
+    </head> 
+    <body> 
+        <header> 
+            <nav> 
+                <ul> 
+                    <li><a href="index.html">Home</a></li> 
+                    <li><a href="excel.html">Excel</a></li> 
+                </ul> 
+            </nav> 
+        </header> 
+        <main> 
+            <form id="main-form" name="mainform"> 
+                <label for="numbers">Enter Numbers (separated by spaces):</label>
+                <input type="text" id="numbers" name="numbers" required><br>
+        
+                <label>Choose Function:</label>
+                <input type="radio" id="autosum" name="function" value="autosum" checked>
+                <label for="autosum">AutoSum</label>
+        
+                <input type="radio" id="average" name="function" value="average">
+                <label for="average">Average</label>
+        
+                <input type="radio" id="max" name="function" value="max">
+                <label for="max">Max</label>
+        
+                <input type="radio" id="min" name="function" value="min">
+                <label for="min">Min</label><br>
+        
+                <button type="button" id="calculate-button">Calculate</button>
+            </form> 
+            <div id="output"></div> 
+            <button id="theme-switch">Dark Theme</button>
+        </main> 
+        <footer> 
+            <p> ILAC & EFREI - HTML, CSS, and JavaScript Assignment - Rousselin Guillaume </p> 
+        </footer> 
+        <script src="js/script.js"></script>
+    </body> 
+</html>
